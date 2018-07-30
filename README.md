@@ -16,14 +16,33 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
 
 
 
-
-
 If you use Spring boot version 2.0.0 (or older one) and use mysql-connector-java dependency:
 
 
+![Spring boot connection problem](/boot_problem.png?raw=true "Spring boot connection problem")
 
 
 If you use try to connect with mysql workbench:
+
+
+![Mysql workbench problem](/mysql_workbench.png?raw=true "Mysql workbench problem")
+
+
+The solution is very easy. You must connect to mysql and change  change the encryption of the user's password by altering the user with below Alter command (use old plugin) :
+
+With docker open a terminal and connect to your container and change pasword of your user wuth old mysql_native_password:
+
+
+```
+docker exec -it mysql  bash     ()
+
+mysql -u root -p (login as root )
+
+// you need to change password to your user with mysql_native_password
+
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root'; (use old mysql_native_password) (change root's password with old alternative)
+
+```
 
 
 
