@@ -19,7 +19,7 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
 If you use Spring boot version 2.0.0 (or older one) and use mysql-connector-java dependency:
 
 
-![Spring boot connection problem](/boot_problem.png?raw=true "Spring boot connection problem")
+![Spring boot connection problem](https://github.com/cristianprofile/spring-boot-mysql-caching_sha2_password-problem/blob/master/boot_problem.png?raw=true "Spring boot connection problem")
 
 
 If you use try to connect with mysql workbench:
@@ -47,7 +47,7 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root'; (use old 
 
 **Link to youtube video demo:**
 
-[![Video DEMO](/youtube-screen.png?raw=true)](https://youtu.be/vOUMmsHlMcY)
+[![Video DEMO](https://github.com/cristianprofile/spring-boot-mysql-caching_sha2_password-problem/blob/master/youtube-screen.png?raw=true)](https://youtu.be/vOUMmsHlMcY)
 
 
 ** This bug was fixed in Spring boot 2.0.3.release or later and it will be fixed inside mysql workbench MySql Workbench has a new version, that is compatible with MySQL 8.0. It is RC. **
