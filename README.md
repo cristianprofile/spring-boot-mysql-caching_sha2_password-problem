@@ -45,6 +45,8 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root'; (use old 
 ```
 
 
+**Link to youtube video demo:**
+
 [![Video DEMO](/youtube-screen.png?raw=true)](https://youtu.be/vOUMmsHlMcY)
 
 
