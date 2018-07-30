@@ -25,7 +25,7 @@ If you use Spring boot version 2.0.0 (or older one) and use mysql-connector-java
 If you use try to connect with mysql workbench:
 
 
-![Mysql workbench problem](/mysql_workbench.png?raw=true "Mysql workbench problem")
+![Mysql workbench problem](https://github.com/cristianprofile/spring-boot-mysql-caching_sha2_password-problem/blob/master/boot_problem.png?raw=true "Mysql workbench problem")
 
 
 The solution is very easy. You must connect to mysql and change the encryption of the user's password by altering the user with below Alter command (use old plugin) :
