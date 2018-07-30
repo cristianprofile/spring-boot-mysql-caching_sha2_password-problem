@@ -50,7 +50,7 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root'; (use old 
 [![Video DEMO](https://github.com/cristianprofile/spring-boot-mysql-caching_sha2_password-problem/blob/master/youtube-screen.png?raw=true)](https://youtu.be/vOUMmsHlMcY)
 
 
-** This bug has been fixed in Spring boot 2.0.3.release or later. mysql workbench MySql Workbench will release  a new version that will be  compatible with MySQL 8.0. (It is RC.) **
+** This bug has been fixed in Spring boot 2.0.3.release+. mysql workbench MySql Workbench will release  a new version that will be  compatible with MySQL 8.0. (It is RC.) **
 
 
 
