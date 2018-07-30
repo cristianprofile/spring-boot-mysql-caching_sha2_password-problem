@@ -45,7 +45,7 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root'; (use old 
 ```
 
 
-
+** This bug was fixed in Spring boot 2.0.3.release or later and it will be fixed inside mysql workbench MySql Workbench has a new version, that is compatible with MySQL 8.0. It is RC. **
 
 
 
